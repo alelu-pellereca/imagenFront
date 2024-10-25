@@ -1,10 +1,6 @@
 
-FROM node:latest
-COPY package.json /opt/
-WORKDIR /opt/ 
-COPY ./ ./
-RUN npm install
+FROM node:22.9.0-alpine
 
-EXPOSE 3000
- 
+WORKDIR /opt/ 
+
 CMD ["npm", "run", "start"]
