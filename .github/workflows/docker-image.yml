@@ -21,6 +21,6 @@ jobs:
       - name: donde estoy
         run: pwd
       - name: Construir la imagen Docker
-        run: docker build --pull --rm -t alelu-pellereca/imagenfront1:latest --build-arg NODE_IMAGE=docker.io/library/node:22.9.0-alpine .
+        run: docker build --pull --rm -t alelu-pellereca/imagenfront1:latest --build-arg NODE_IMAGE=docker.io/library/node:latest .
       - name: Publicar la imagen en Docker Hub
         run: docker push alelu-pellereca/imagenfront1:latest 
