@@ -21,6 +21,6 @@ jobs:
       - name: donde estoy
         run: pwd
       - name: Construir la imagen Docker
-        run: docker build --pull --rm -t alelu-pellereca/imagenfront1:latest imagenFront/Dockerfile
+        run: docker build --pull --rm -t alelu-pellereca/imagenfront1:latest .
       - name: Publicar la imagen en Docker Hub
         run: docker push alelu-pellereca/imagenfront1:latest 
