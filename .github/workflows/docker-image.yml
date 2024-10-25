@@ -24,4 +24,5 @@ jobs:
         run: cd ..
       - name: donde estoy
         run: pwd
-       
+      - name: listar
+        run: ls
