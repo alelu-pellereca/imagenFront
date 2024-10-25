@@ -18,5 +18,3 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Construir la imagen Docker
         run: docker build --pull --rm -f "Dockerfile" -t imagenfront1:latest .
-      - name: Publicar la imagen en Docker Hub
-        run: docker push --rm -f "Dockerfile" -t imagenfront1:latest
