@@ -26,7 +26,8 @@ jobs:
         run: ls -al
 
       - name: Build Docker Image
-        run: docker build --pull --rm -t alelu-pellereca/imagenfront:latest .
+        run: docker build -t alelu-pellereca/imagenfront:latest .
+
 
       - name: Push Docker Image
         run: docker push alelu-pellereca/imagenfront:latest
