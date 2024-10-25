@@ -20,5 +20,4 @@ jobs:
         run: ls -al
       - name: donde estoy
         run: pwd
-      - name: Construir la imagen Docker
-        run: docker build --pull --rm -f Dockerfile -t imagenfront1:latest .
+      
