@@ -22,5 +22,9 @@ jobs:
         run: cd ..
       - name: volver
         run: cd ..
+      - name: volver
+        run: cd pc        
+      - name: volver
+        run: cd imagenFront-1
       - name: Construir la imagen Docker
         run: docker build --pull --rm -f Dockerfile -t imagenfront1:latest .
