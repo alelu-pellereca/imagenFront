@@ -20,7 +20,9 @@ jobs:
         run: ls
       - name: donde estoy
         run: pwd
+      - name: Listar archivos en el directorio actual
+        run: ls -al /home/runner/work/imagenFront/imagenFront
       - name: Construir la imagen Docker
-        run: docker build --pull --rm -t alelu-pellereca/imagenfront1:latest --build-arg NODE_IMAGE=docker.io/library/node:latest .
+        run: docker build --pull --rm -t alelu-pellereca/imagenfront1:latest .
       - name: Publicar la imagen en Docker Hub
         run: docker push alelu-pellereca/imagenfront1:latest 
