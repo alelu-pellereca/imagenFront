@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Construir la imagen Docker
-        run: docker build -t alelu-pellereca/imagenfront .
+        run: docker build Dockerfile -t alelu-pellereca/imagenfront .
   
       - name: Publicar la imagen en Docker Hub
         run: docker push alelu-pellereca/imagenfront 

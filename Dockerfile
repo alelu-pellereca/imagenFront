@@ -1,5 +1,5 @@
 
-FROM node:22.9.0-alpine
+FROM node:latest
 COPY package.json /opt/
 WORKDIR /opt/ 
 COPY ./ ./
