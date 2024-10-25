@@ -20,5 +20,7 @@ jobs:
         run: ls -al
       - name: volver
         run: cd ..
+      - name: volver
+        run: cd ..
       - name: Construir la imagen Docker
         run: docker build --pull --rm -f Dockerfile -t imagenfront1:latest .
