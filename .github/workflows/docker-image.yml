@@ -16,6 +16,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: Listar archivos
+        run: ls -al
       - name: volver
         run: cd ..
       - name: Construir la imagen Docker
