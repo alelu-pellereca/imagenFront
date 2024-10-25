@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Listar archivos
         run: ls -al
-      - name: volver
-        run: cd imagenFront-1
+      - name: donde estoy
+        run: pwd
       - name: Construir la imagen Docker
         run: docker build --pull --rm -f Dockerfile -t imagenfront1:latest .
