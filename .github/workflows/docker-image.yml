@@ -21,7 +21,7 @@ jobs:
       - name: donde estoy
         run: pwd
       - name: volver
-        run: cd imagenFront
+        run: cd 
       - name: donde estoy
         run: pwd
       - name: listar
