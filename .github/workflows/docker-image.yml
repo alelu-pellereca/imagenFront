@@ -22,9 +22,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: List files
-        run: ls -al
-
       - name: Build Docker Image
         run: docker build -t alepellereca/imagenfront:latest .
 
