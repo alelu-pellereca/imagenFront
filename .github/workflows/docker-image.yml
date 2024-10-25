@@ -20,9 +20,8 @@ jobs:
         run: ls -al
       - name: donde estoy
         run: pwd
-      - name: volver
-        run: cd 
-      - name: donde estoy
-        run: pwd
-      - name: listar
-        run: ls
+      - name: Construir la imagen Docker
+        run: docker build -t alelu-pellereca/imagenfront .
+  
+      - name: Publicar la imagen en Docker Hub
+        run: docker push alelu-pellereca/imagenfront 
