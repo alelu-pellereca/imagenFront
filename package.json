@@ -15,15 +15,15 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alelu-pellereca/practicaDO1.git"
+    "url": "git+https://github.com/alelu-pellereca/imagenfront.git"
   },
   "keywords": [
     "docker"
   ],
   "bugs": {
-    "url": "https://github.com/alelu-pellereca/practicaDO1/issues"
+    "url": "https://github.com/alelu-pellereca/imagenfront/issues"
   },
-  "homepage": "https://github.com/alelu-pellereca/practicaDO1#readme",
+  "homepage": "https://github.com/alelu-pellereca/imagenfront#readme",
   
   "dependencies": {
     "express": "^4.21.1"

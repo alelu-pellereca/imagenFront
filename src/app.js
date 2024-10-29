@@ -5,7 +5,7 @@ app.use(express.json());
 
 // Ruta básica
 app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Hello World from frontendv2!!' });
+    res.status(200).json({ message: 'Hello World from frontendv1!!' });
 });
 
 // Ruta de ejemplo para pruebas
